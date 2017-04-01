@@ -17,7 +17,11 @@ A collection of machine configuration I use
  - [DriveDx](http://binaryfruit.com/download/drivedx/mac/1?ref=LicenseEmail) (Don't forgot to drop in the license key)
  - [Little Snitch](https://www.obdev.at/products/littlesnitch/download.html) (Don't forgot to drop in the license key)
  - [Hyperswitch](https://bahoom.com/hyperswitch)
-
+ - [F.lux](https://justgetflux.com/)
+ - [Spotify](https://www.spotify.com/au/download/mac/)
+ - [Rescuetime](https://www.rescuetime.com/download)
+ - [Kaleidoscope](https://itunes.apple.com/au/app/kaleidoscope/id587512244?mt=12)
+ - [ksdiff](http://www.kaleidoscopeapp.com/ksdiff2)
 
 ## Do Configuration
 
