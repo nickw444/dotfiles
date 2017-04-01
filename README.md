@@ -33,6 +33,10 @@ ln -s /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl /usr/local/
 
 #### Sublime synced settings  (Requires Dropbox)
 ```sh
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+mkdir ~/Dropbox/Apps/ST3
+mv User ~/Dropbox/Apps/ST3
+ln -s ~/Dropbox/Apps/ST3/User
 ```
 
 #### Link Dotfiles
