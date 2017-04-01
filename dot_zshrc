@@ -1,0 +1,45 @@
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="agnoster"
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+plugins=(git common-aliases git-prompt zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+export PATH="/usr/local/bin:~/bin:$PATH"
+
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
+
+BASEDIR="$HOME/.dotfiles"
+source "$BASEDIR/zsh/alias.sh"; # Extra Alias's
+
+# Source for local machine overrides
+if [ -e "~/.zshrc-local" ]; then
+	source "~/.zshrc-local";
+fi
+
+prompt_dir() {
+	prompt_segment blue black '%2~' # Only show 2 dirs.
+}
+
+prompt_context() {
+	# Only show the first char of the username
+	prompt_segment black default "%(!.%{%F{yellow}%}.)$USER[1]@%m"
+}

@@ -1,0 +1,12 @@
+UseKeychain yes
+
+Host cse
+	User nickw
+	HostName cse.unsw.edu.au
+
+Host glados
+	User csesoc
+	HostName glados.cse.unsw.edu.au
+
+Host route
+    User root
