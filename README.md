@@ -73,6 +73,11 @@ brew install fzf
 /usr/local/opt/fzf/install
 ```
 
+#### Git Config
+```
+ln -s $PWD/git/config ~/.git/config
+```
+
 
 ## Machine Specific Config
 
