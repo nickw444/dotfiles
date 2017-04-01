@@ -1,0 +1,5 @@
+# This is Git's per-user configuration file.
+
+[user]
+	name = Nick Whyte
+	email = nick@nickwhyte.com
