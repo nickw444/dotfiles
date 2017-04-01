@@ -22,6 +22,9 @@ plugins=(git common-aliases git-prompt zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
+# Fix for when pasting large buffers for autosuggestions
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+
 export PATH="/usr/local/bin:~/bin:$PATH"
 
 # Preferred editor for local and remote sessions
@@ -43,3 +46,14 @@ prompt_context() {
 	# Only show the first char of the username
 	prompt_segment black default "%(!.%{%F{yellow}%}.)$USER[1]@%m"
 }
+
+build_prompt() {
+  RETVAL=$?
+  prompt_status
+  prompt_virtualenv
+  prompt_context
+  prompt_dir
+  prompt_end
+}
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

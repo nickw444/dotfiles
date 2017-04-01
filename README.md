@@ -61,6 +61,19 @@ brew install nginx
 # Link appropriately with /usr/local/etc/nginx/
 ```
 
+
+#### ZSH Autosuggestions
+```sh
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
+#### FZF Fuzzy Ctr-r
+```sh
+brew install fzf
+/usr/local/opt/fzf/install
+```
+
+
 ## Machine Specific Config
 
 If exists, the file `~/.zshrc-local` will be sourced. Put machine specific overrides/config in here.
