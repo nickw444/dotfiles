@@ -2,7 +2,7 @@ alias lgtms='git checkout master && ggpull && git checkout - && /Users/nickw/wor
 alias grebase='git checkout green && ggpull && git checkout - && git rebase green';
 
 alias gll="git log --graph --oneline --decorate --all" # Show git log in a tree for all branches
-alias gl='git log --graph --oneline --decorate $(git branch | cut -c 3- | grep nwhyte) master green' # Show only nwhyte branches + master + green
+alias gl='git log --graph --oneline --decorate $(git branch | cut -c 3- | grep nwhyte) master' # Show only nwhyte branches + master + green
 alias gln='git log --oneline --graph --decorate $(git branch | cut -c 3- | grep nwhyte)' # Visualise all branches with nwhyte.
 
 
@@ -15,8 +15,6 @@ drebase() {
     echo ">" git rebase --onto "$1" "${1}@{1}";
     git rebase --onto "$1" "${1}@{1}";
 }
-
-
 
 alias my_branches='gb  | grep nwhyte | sed "s/^\*//" | sed "s/^\ *//"';
 alias my_upstreams='git branch -r | grep nwhyte | sed "s/^*//" | sed "s/\ *origin\///" | sort'
@@ -43,3 +41,24 @@ be_owner() {
   echo "$FILE now looks like:"
   cat $FILE;
 }
+
+
+gpc() {
+  if [ $# -ne 3 ]; then
+        echo "Usage: $0 <base-branch> <branch> <commit to pick>";
+        return 1
+    fi;
+
+    git checkout -b $2;
+    git reset --keep $1;
+    git cherry-pick $3;
+    ggpush;
+}
+
+
+since_last_release() {
+    git log --oneline --author=nick --since="1 week ago"
+}
+
+export GOPATH=~/go
+export PATH=$PATH:~/go/bin:~/work/scripts

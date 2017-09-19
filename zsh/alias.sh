@@ -5,29 +5,37 @@ alias gl="git log --graph --oneline --decorate --all" # Show git log in a tree f
 alias glm="git log --graph --oneline --decorate" # Show git log in a tree for this branch only
 alias gcad='git commit --amend --date "$(date)"' # Amend latest commit date to now
 alias gfp='git fetch -p' # Git fetch and purge non existing remote branches
-alias halp="git for-each-ref --count=30 --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' |column -ts'|'"
+alias halp="git for-each-ref --count=30 --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' |column -ts'|'  | less -S"
+alias gsl="git stash list"
 
 
 alias nom='export PATH=$PWD/node_modules/.bin:$PATH' # Add Node Modules to Path
 alias binds='sudo lsof -i -n -P | grep TCP'
 
-
-
-SYS_PIP=$(which pip);
-
-pip() {
-    if [ "$VIRTUAL_ENV" == "" ]; then;
-        echo "Not inside a virtualenv. Are you sure? [Y/n]";
-        read answer
-        case $answer in
-            'Y' ) ;;
-            'y' ) ;;
-            '') ;;
-            * ) return 1 ;;
-        esac
-        $SYS_PIP $@;
-    else
-        PIP="$VIRTUAL_ENV/bin/pip"
-        $PIP $@;
-    fi;
+git_log_grep () {
+    git branch |
+    grep $1 |
+    sed -e "s/** //g" |
+    xargs git log --oneline --decorate --graph
 }
+
+
+
+# SYS_PIP=$(which pip);
+
+# pip() {
+#     if [ "$VIRTUAL_ENV" == "" ]; then;
+#         echo "Not inside a virtualenv. Are you sure? [Y/n]";
+#         read answer
+#         case $answer in
+#             'Y' ) ;;
+#             'y' ) ;;
+#             '') ;;
+#             * ) return 1 ;;
+#         esac
+#         $SYS_PIP $@;
+#     else
+#         PIP="$VIRTUAL_ENV/bin/pip"
+#         $PIP $@;
+#     fi;
+# }
