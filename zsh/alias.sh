@@ -18,24 +18,3 @@ git_log_grep () {
     sed -e "s/** //g" |
     xargs git log --oneline --decorate --graph
 }
-
-
-
-# SYS_PIP=$(which pip);
-
-# pip() {
-#     if [ "$VIRTUAL_ENV" == "" ]; then;
-#         echo "Not inside a virtualenv. Are you sure? [Y/n]";
-#         read answer
-#         case $answer in
-#             'Y' ) ;;
-#             'y' ) ;;
-#             '') ;;
-#             * ) return 1 ;;
-#         esac
-#         $SYS_PIP $@;
-#     else
-#         PIP="$VIRTUAL_ENV/bin/pip"
-#         $PIP $@;
-#     fi;
-# }

@@ -3,3 +3,5 @@
 [user]
 	name = Nick Whyte
 	email = nick@nickwhyte.com
+[core]
+	editor = subl -n -w
