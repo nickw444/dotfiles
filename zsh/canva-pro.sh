@@ -18,6 +18,7 @@ drebase() {
 
 alias my_branches='gb  | grep nwhyte | sed "s/^\*//" | sed "s/^\ *//"';
 alias my_upstreams='git branch -r | grep nwhyte | sed "s/^*//" | sed "s/\ *origin\///" | sort'
+alias since_last_release='git log --oneline origin/release-$name-rc...HEAD --author=nick'
 
 orphaned_branches() {
     my_upstreams > "/tmp/upstreams.txt";
@@ -53,11 +54,6 @@ gpc() {
     git reset --keep $1;
     git cherry-pick $3;
     ggpush;
-}
-
-
-since_last_release() {
-    git log --oneline --author=nick --since="1 week ago"
 }
 
 export GOPATH=~/go
