@@ -1,0 +1,57 @@
+{
+	"added_words":
+	[
+		"Arduino",
+		"Ebay",
+		"analysing",
+		"Broadlink",
+		"analyse",
+		"Digitising",
+		"manchester",
+		"digitise",
+		"metadata"
+	],
+	"binary_file_patterns":
+	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip",
+		"bridge",
+		"*.pyc"
+	],
+	"color_scheme": "Packages/User/SublimeLinter/OneDark (SL).tmTheme",
+	"default_line_ending": "LF",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.iml",
+		"*.DS_Store",
+		"*.pyc"
+	],
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".idea",
+		".git",
+		".awcache"
+	],
+	"font_face": "Menlo",
+	"font_size": 14,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}

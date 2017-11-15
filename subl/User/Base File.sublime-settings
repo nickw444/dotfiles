@@ -1,0 +1,8 @@
+{
+    "jsdocs_align_tags": "no",
+    "jsdocs_function_description": false,
+    "jsdocs_return_description": false,
+    "jsdocs_param_description": false,
+    "jsdocs_deep_indent": false,
+    "jsdocs_lower_case_primitives": true
+}
