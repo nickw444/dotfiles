@@ -57,4 +57,6 @@ gpc() {
 }
 
 export GOPATH=~/go
-export PATH=$PATH:~/go/bin:~/work/scripts
+export PATH=$PATH:~/go/bin:~/work/scripts:~/work/scripts/productivity-hacks
+signon
+

@@ -5,12 +5,15 @@ alias gl="git log --graph --oneline --decorate --all" # Show git log in a tree f
 alias glm="git log --graph --oneline --decorate" # Show git log in a tree for this branch only
 alias gcad='git commit --amend --date "$(date)"' # Amend latest commit date to now
 alias gfp='git fetch -p' # Git fetch and purge non existing remote branches
-alias halp="git for-each-ref --count=30 --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' |column -ts'|'  | less -S"
+alias halp="git for-each-ref --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' |column -ts'|'  | grep Nick | less -S"
 alias gsl="git stash list"
+alias glsig="git log --graph --oneline --decorate --pretty=\"format:%h %G? %aN  %s\""
 
 
 alias nom='export PATH=$PWD/node_modules/.bin:$PATH' # Add Node Modules to Path
 alias binds='sudo lsof -i -n -P | grep TCP'
+alias signon='git config --global commit.gpgsign true'
+alias signoff='git config --global commit.gpgsign false'
 
 git_log_grep () {
     git branch |
