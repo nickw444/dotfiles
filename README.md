@@ -6,9 +6,10 @@ A collection of machine configuration I use
  - [1 Password](https://agilebits.com/downloads)
  - [Homebrew](https://brew.sh/)
  - [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
- - [iTerm](https://www.iterm2.com/downloads.html)
+ - [iTerm](https://www.iterm2.com/downloads.html) (Load config from `$PWD/iterm/prefs` folder)
  - [SublimeText](https://www.sublimetext.com/) (Don't forgot to drop in the license file)
  - [Atom](https://atom.io/)
+ - [VS Code](https://code.visualstudio.com/)
  - [Google Chrome](https://www.google.com.au/chrome/browser/desktop/)
  - [Better Touch Tool](https://www.boastr.net/downloads/) (Don't forgot to drop in the license file)
  - [Cyberduck](https://cyberduck.io/?l=en) (Don't forgot to drop in the license file)
@@ -22,6 +23,8 @@ A collection of machine configuration I use
  - [Rescuetime](https://www.rescuetime.com/download)
  - [Kaleidoscope](https://itunes.apple.com/au/app/kaleidoscope/id587512244?mt=12)
  - [ksdiff](http://www.kaleidoscopeapp.com/ksdiff2)
+ - [GPG Suite](https://gpgtools.org/)
+
 
 ## Do Configuration
 
@@ -32,7 +35,7 @@ ln -s $PWD/ssh/config ~/.ssh/config
 
 #### Subl binary
 ```sh
-ln -s /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
 #### Sublime synced settings  (Requires Dropbox)
@@ -41,6 +44,13 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 mkdir ~/Dropbox/Apps/ST3
 mv User ~/Dropbox/Apps/ST3
 ln -s ~/Dropbox/Apps/ST3/User
+```
+
+#### Sublime synced settings (.dotfiles)
+```sh
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+rm -rf User
+ln -s ~/.dotfiles/subl/User
 ```
 
 #### Link Dotfiles
@@ -61,7 +71,6 @@ brew install nginx
 # Link appropriately with /usr/local/etc/nginx/
 ```
 
-
 #### ZSH Autosuggestions
 ```sh
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -73,11 +82,12 @@ brew install fzf
 /usr/local/opt/fzf/install
 ```
 
-#### Git Config
-```
-ln -s $PWD/git/config ~/.git/config
+## Generate New SSH Keys
+```sh
+ssh-keygen -R
 ```
 
+Upload to [Gitlab](https://gitlab.com/profile/keys)/[Github](https://github.com/settings/keys)
 
 ## Machine Specific Config
 

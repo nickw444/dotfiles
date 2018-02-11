@@ -8,6 +8,8 @@ do
 	SRC="$DIR/$f";
 	DEST="$HOME/$(echo "$f" | sed "s/dot_/./")"
 	echo "$SRC -> $DEST";
-	rm $DEST;
+    if [ -f $DEST ]; then
+	   rm $DEST;
+    fi
  	ln -s $SRC $DEST;
 done
