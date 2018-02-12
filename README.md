@@ -24,6 +24,7 @@ A collection of machine configuration I use
  - [Kaleidoscope](https://itunes.apple.com/au/app/kaleidoscope/id587512244?mt=12)
  - [ksdiff](http://www.kaleidoscopeapp.com/ksdiff2)
  - [GPG Suite](https://gpgtools.org/)
+ - [Fira Code Font](https://github.com/tonsky/FiraCode)
 
 
 ## Do Configuration
