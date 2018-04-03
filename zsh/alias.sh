@@ -5,7 +5,7 @@ alias gl="git log --graph --oneline --decorate --all" # Show git log in a tree f
 alias glm="git log --graph --oneline --decorate" # Show git log in a tree for this branch only
 alias gcad='git commit --amend --date "$(date)"' # Amend latest commit date to now
 alias gfp='git fetch -p' # Git fetch and purge non existing remote branches
-alias halp="git for-each-ref --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' |column -ts'|'  | grep Nick | less -S"
+alias halp="git for-each-ref --color=always --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' | column -ts'|'  | grep Nick | less -S"
 alias gsl="git stash list"
 alias glsig="git log --graph --oneline --decorate --pretty=\"format:%h %G? %aN  %s\""
 
@@ -19,5 +19,10 @@ git_log_grep () {
     git branch |
     grep $1 |
     sed -e "s/** //g" |
-    xargs git log --oneline --decorate --graph
+    xargs git log --oneline --decorate --graph $2
 }
+
+alias del='rmtrash'
+alias trash='rmtrash'
+alias gh='github-info'
+

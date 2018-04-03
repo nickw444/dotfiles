@@ -1,3 +1,4 @@
+unalias gr
 alias lgtms='git checkout master && ggpull && git checkout - && /Users/nickw/work/canva/tools/check-lgtms/check_lgtms.sh';
 alias grebase='git checkout green && ggpull && git checkout - && git rebase green';
 
@@ -57,6 +58,6 @@ gpc() {
 }
 
 export GOPATH=~/go
-export PATH=$PATH:~/go/bin:~/work/scripts:~/work/scripts/productivity-hacks
+export PATH=$PATH:~/go/bin:~/work/scripts:~/work/scripts/bin:~/work/scripts/productivity-hacks
 signon
 
