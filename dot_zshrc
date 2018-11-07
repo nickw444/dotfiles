@@ -18,7 +18,7 @@ COMPLETION_WAITING_DOTS="true"
 # much, much faster.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git git-prompt zsh-autosuggestions)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -55,6 +55,13 @@ build_prompt() {
   prompt_dir
   prompt_end
 }
+
+git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "(%{$fg_bold[magenta]%}${ref#refs/heads/}%{${reset_color}%})"
+}
+
+RPROMPT='$(git_prompt_info)'
 
 # FZF Plugin
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

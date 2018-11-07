@@ -8,7 +8,6 @@ A collection of machine configuration I use
  - [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
  - [iTerm](https://www.iterm2.com/downloads.html) (Load config from `$PWD/iterm/prefs` folder)
  - [SublimeText](https://www.sublimetext.com/) (Don't forgot to drop in the license file)
- - [Atom](https://atom.io/)
  - [VS Code](https://code.visualstudio.com/)
  - [Google Chrome](https://www.google.com.au/chrome/browser/desktop/)
  - [Better Touch Tool](https://www.boastr.net/downloads/) (Don't forgot to drop in the license file)
@@ -25,7 +24,11 @@ A collection of machine configuration I use
  - [ksdiff](http://www.kaleidoscopeapp.com/ksdiff2)
  - [GPG Suite](https://gpgtools.org/)
  - [Fira Code Font](https://github.com/tonsky/FiraCode)
-
+ - [The Unarchiver](https://itunes.apple.com/us/app/the-unarchiver/id425424353?mt=12)
+ - [Things](https://itunes.apple.com/au/app/things-3/id904280696?mt=12)
+ - [Magnet](https://itunes.apple.com/au/app/magnet/id441258766?mt=12)
+ - [Amphetamine](https://itunes.apple.com/au/app/amphetamine/id937984704?mt=12)
+ - [Quitter](https://marco.org/apps)
 
 ## Do Configuration
 

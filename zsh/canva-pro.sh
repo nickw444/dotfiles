@@ -61,3 +61,6 @@ export GOPATH=~/go
 export PATH=$PATH:~/go/bin:~/work/scripts:~/work/scripts/bin:~/work/scripts/productivity-hacks
 signon
 
+
+. /Users/nickw/.nix-profile/etc/profile.d/nix.sh
+
