@@ -9,6 +9,7 @@ A collection of machine configuration I use
  - [iTerm](https://www.iterm2.com/downloads.html) (Load config from `$PWD/iterm/prefs` folder)
  - [SublimeText](https://www.sublimetext.com/) (Don't forgot to drop in the license file)
  - [VS Code](https://code.visualstudio.com/)
+ - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
  - [Google Chrome](https://www.google.com.au/chrome/browser/desktop/)
  - [Better Touch Tool](https://www.boastr.net/downloads/) (Don't forgot to drop in the license file)
  - [Cyberduck](https://cyberduck.io/?l=en) (Don't forgot to drop in the license file)
@@ -17,7 +18,7 @@ A collection of machine configuration I use
  - [DriveDx](http://binaryfruit.com/download/drivedx/mac/1?ref=LicenseEmail) (Don't forgot to drop in the license key)
  - [Little Snitch](https://www.obdev.at/products/littlesnitch/download.html) (Don't forgot to drop in the license key)
  - [Hyperswitch](https://bahoom.com/hyperswitch)
- - [F.lux](https://justgetflux.com/)
+ - ~[F.lux](https://justgetflux.com/)~ Enable NightShift
  - [Spotify](https://www.spotify.com/au/download/mac/)
  - [Rescuetime](https://www.rescuetime.com/download)
  - [Kaleidoscope](https://itunes.apple.com/au/app/kaleidoscope/id587512244?mt=12)

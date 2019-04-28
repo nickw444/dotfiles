@@ -21,8 +21,6 @@
 	trustExitCode = true
 [push]
 	default = current
-[github]
-	apiKey = 3f2bedeff2d2e887ec85537c778a5e6ef90b5d35
 [protocol]
 	version = 2
 [alias]
