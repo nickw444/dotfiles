@@ -30,6 +30,7 @@ A collection of machine configuration I use
  - [Magnet](https://itunes.apple.com/au/app/magnet/id441258766?mt=12)
  - [Amphetamine](https://itunes.apple.com/au/app/amphetamine/id937984704?mt=12)
  - [Quitter](https://marco.org/apps)
+ - [rmtrash](https://github.com/PhrozenByte/rmtrash) `brew install rmtrash`
 
 ## Do Configuration
 

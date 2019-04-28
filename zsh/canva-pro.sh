@@ -49,12 +49,4 @@ signon
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/nickw/work/canva/web/tools/renderer/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/nickw/work/canva/web/tools/renderer/node_modules/tabtab/.completions/sls.zsh
 
-prompt_context() {
-  # Only show the first char of the username
-  prompt_segment black white "%(!.%{%F{yellow}%}.)$USER[1]@%m"
-}
-
-git_prompt_info() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "(%{$fg_bold[black]%}${ref#refs/heads/}%{${reset_color}%})"
-}
+source "$HOME/.dotfiles/zsh/lighter.sh"
