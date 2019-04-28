@@ -7,19 +7,26 @@
 	[
 		"A File Icon",
 		"Anaconda",
+		"Babel",
+		"CTags",
 		"DocBlockr",
+		"GhostText",
 		"Git",
 		"GitGutter",
+		"nginx",
 		"One Dark Material - Theme",
 		"Origami",
 		"Package Control",
 		"Pretty JSON",
 		"Protobuf Syntax Hightlighting",
+		"Protocol Buffer Syntax",
 		"SideBarEnhancements",
 		"Soy",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-eslint",
 		"SublimeLinter-flake8",
+		"Sublimerge 3",
+		"TypeScript",
 		"Whitespace"
 	]
 }
