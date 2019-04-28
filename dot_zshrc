@@ -33,11 +33,6 @@ export EDITOR='vim'
 BASEDIR="$HOME/.dotfiles"
 source "$BASEDIR/zsh/alias.sh"; # Extra Alias's
 
-# Source for local machine overrides
-if [ -e "$HOME/.zshrc-local" ]; then
-	source "$HOME/.zshrc-local";
-fi
-
 prompt_dir() {
 	prompt_segment blue black '%2~' # Only show 2 dirs.
 }
@@ -66,4 +61,7 @@ RPROMPT='$(git_prompt_info)'
 # FZF Plugin
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# Source for local machine overrides
+if [ -e "$HOME/.zshrc-local" ]; then
+  source "$HOME/.zshrc-local";
+fi

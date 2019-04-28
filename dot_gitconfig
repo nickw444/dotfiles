@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 
 [user]
-	name = Nick Whyte
 	email = nick@nickwhyte.com
+	name = Nick Whyte
 [core]
 	editor = subl -n -w
 	excludesfile = /Users/nickw/.gitignore_global
@@ -21,3 +21,9 @@
 	trustExitCode = true
 [push]
 	default = current
+[github]
+	apiKey = 3f2bedeff2d2e887ec85537c778a5e6ef90b5d35
+[protocol]
+	version = 2
+[alias]
+	hisd = log --graph --decorate --abbrev-commit --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold dim normal)<%an>%Creset'
