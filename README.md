@@ -56,6 +56,14 @@ ln -s ~/.dotfiles/subl/User
 ./install_dotfiles.sh
 ```
 
+#### Tmux
+
+On OSX we need to install reattach-to-user-namespace to allow tmux to function.
+
+```
+brew install reattach-to-user-namespace
+```
+
 #### GPG Config
 ```sh
 mkdir ~/.gpg
