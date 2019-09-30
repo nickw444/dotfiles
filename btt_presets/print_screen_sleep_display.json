@@ -1,0 +1,37 @@
+[
+  {
+    "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+    "BTTPredefinedActionType" : 202,
+    "BTTPredefinedActionName" : "Start Screen Saver",
+    "BTTAdditionalConfiguration" : "8388608",
+    "BTTEnabled2" : 1,
+    "BTTKeyboardShortcutKeyboardType" : 40,
+    "BTTUUID" : "F0D5344F-D4D7-442B-8133-94B555AF9228",
+    "BTTNotesInsteadOfDescription" : 0,
+    "BTTEnabled" : 1,
+    "BTTModifierMode" : 0,
+    "BTTShortcutKeyCode" : 105,
+    "BTTShortcutModifierKeys" : 8388608,
+    "BTTOrder" : 0,
+    "BTTDisplayOrder" : 0,
+    "BTTAutoAdaptToKeyboardLayout" : 0
+  },
+  {
+    "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+    "BTTPredefinedActionType" : 13,
+    "BTTPredefinedActionName" : "Sleep Display",
+    "BTTAdditionalConfiguration" : "8912960",
+    "BTTEnabled2" : 1,
+    "BTTKeyboardShortcutKeyboardType" : 40,
+    "BTTUUID" : "9C3A2A6E-DFB3-49DD-B325-1B8976648BCC",
+    "BTTTriggerOnDown" : 0,
+    "BTTNotesInsteadOfDescription" : 0,
+    "BTTEnabled" : 1,
+    "BTTModifierMode" : 0,
+    "BTTShortcutKeyCode" : 105,
+    "BTTShortcutModifierKeys" : 8912896,
+    "BTTOrder" : 5,
+    "BTTDisplayOrder" : 0,
+    "BTTAutoAdaptToKeyboardLayout" : 0
+  }
+]

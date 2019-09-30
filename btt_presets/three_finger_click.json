@@ -1,0 +1,32 @@
+[
+  {
+    "BTTTriggerType" : 112,
+    "BTTTriggerTypeDescription" : "3 Finger Click",
+    "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+    "BTTPredefinedActionType" : 1,
+    "BTTPredefinedActionName" : "Middle Click",
+    "BTTEnabled2" : 1,
+    "BTTAlternateModifierKeys" : 0,
+    "BTTUUID" : "5CD6F81B-7A23-4326-9BE5-7D014E0080C0",
+    "BTTNotesInsteadOfDescription" : 0,
+    "BTTEnabled" : 1,
+    "BTTModifierMode" : 0,
+    "BTTOrder" : 0,
+    "BTTDisplayOrder" : 0
+  },
+  {
+    "BTTTriggerType" : 21,
+    "BTTTriggerTypeDescription" : "3 Finger Click",
+    "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+    "BTTPredefinedActionType" : 1,
+    "BTTPredefinedActionName" : "Middle Click",
+    "BTTEnabled2" : 1,
+    "BTTAlternateModifierKeys" : 0,
+    "BTTUUID" : "75B71B74-DDFF-4BDB-ABEF-F6CCFD39DA9C",
+    "BTTNotesInsteadOfDescription" : 0,
+    "BTTEnabled" : 1,
+    "BTTModifierMode" : 0,
+    "BTTOrder" : 0,
+    "BTTDisplayOrder" : 0
+  }
+]
