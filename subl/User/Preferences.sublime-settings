@@ -29,7 +29,7 @@
 		"bridge",
 		"*.pyc"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/OneDark (SL).tmTheme",
+	"color_scheme": "Packages/One Dark Material - Theme/schemes/OneDark.tmTheme",
 	"default_line_ending": "LF",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -51,7 +51,7 @@
 	[
 		"Vintage"
 	],
-	"theme": "Adaptive.sublime-theme",
+	"theme": "OneDarkMaterial.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
