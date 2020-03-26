@@ -1,0 +1,27 @@
+[
+  {
+    "BTTTriggerType" : 0,
+    "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+    "BTTPredefinedActionType" : 118,
+    "BTTPredefinedActionName" : "Insert \/ Type \/ Paste Custom Text",
+    "BTTAdditionalActionData" : {
+      "BTTActionTextToPaste" : "BAtzdHJlYW10eXBlZIHoA4QBQISEhA1OU1RleHRTdG9yYWdlAISEGU5TTXV0YWJsZUF0dHJpYnV0ZWRTdHJpbmcAhIQSTlNBdHRyaWJ1dGVkU3RyaW5nAISECE5TT2JqZWN0AIWShISED05TTXV0YWJsZVN0cmluZwGEhAhOU1N0cmluZwGWhAErHShCVFQpQGRhdGVmb3JtYXQ6SEg6bW0oQlRUKToghoQCaUkBHZKEhIQMTlNEaWN0aW9uYXJ5AJaEAWkCkoSZmQZOU0ZvbnSGkoSEhAZOU0ZvbnQelpwchAVbMjhjXQYAAAAUAAAA__5IAGUAbAB2AGUAdABpAGMAYQCEAWYMhAFjAKABoACgAIaShJmZB05TQ29sb3KGkoSEhAdOU0NvbG9yAJagA4QCZmYAAYaGhg=="
+    },
+    "BTTStringToType" : "(BTT)@dateformat:HH:mm:ss(BTT)",
+    "BTTMoveCursorLeftBy" : "0",
+    "BTTAdditionalConfiguration" : "1310729",
+    "BTTEnabled2" : 1,
+    "BTTKeyboardShortcutKeyboardType" : 70,
+    "BTTUUID" : "397DEA94-FDEB-4804-9ECE-56AF4C0A7E80",
+    "BTTTriggerOnDown" : 1,
+    "BTTNotesInsteadOfDescription" : 0,
+    "BTTLayoutIndependentChar" : "t",
+    "BTTEnabled" : 1,
+    "BTTModifierMode" : 0,
+    "BTTShortcutKeyCode" : 17,
+    "BTTShortcutModifierKeys" : 1310720,
+    "BTTOrder" : 5,
+    "BTTDisplayOrder" : 0,
+    "BTTAutoAdaptToKeyboardLayout" : 0
+  }
+]
