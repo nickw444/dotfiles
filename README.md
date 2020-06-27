@@ -2,7 +2,6 @@
 A collection of machine configuration I use
 
 ## Install Apps / Deps
- - [Dropbox](https://www.dropbox.com/install)
  - [1 Password](https://agilebits.com/downloads)
  - [Homebrew](https://brew.sh/)
  - [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
@@ -27,7 +26,7 @@ A collection of machine configuration I use
  - [Fira Code Font](https://github.com/tonsky/FiraCode)
  - [The Unarchiver](https://itunes.apple.com/us/app/the-unarchiver/id425424353?mt=12)
  - [Things](https://itunes.apple.com/au/app/things-3/id904280696?mt=12)
- - [Magnet](https://itunes.apple.com/au/app/magnet/id441258766?mt=12)
+ - [Rectangle](https://rectangleapp.com/)
  - [Amphetamine](https://itunes.apple.com/au/app/amphetamine/id937984704?mt=12)
  - [Quitter](https://marco.org/apps)
  - [rmtrash](https://github.com/PhrozenByte/rmtrash) `brew install rmtrash`
