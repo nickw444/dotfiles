@@ -44,7 +44,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 #### Sublime synced settings (.dotfiles)
 ```sh
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+cd ~/Library/Application\ Support/Sublime\ Text/Packages/
 rm -rf User
 ln -s ~/.dotfiles/subl/User
 ```
@@ -69,15 +69,12 @@ ln -s $PWD/gpg/gpg-agent.conf ~/.gpg
 ln -s $PWD/gpg/gpg.conf ~/.gpg
 ```
 
-#### Nginx Reverse Proxy Port Redirection
-```sh
-brew install nginx
-# Link appropriately with /usr/local/etc/nginx/
-```
-
 #### ZSH Autosuggestions
+
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+
 ```sh
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 #### FZF Fuzzy Ctr-r
