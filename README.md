@@ -10,7 +10,7 @@ A collection of machine configuration I use
  - [VS Code](https://code.visualstudio.com/)
  - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
  - [Google Chrome](https://www.google.com.au/chrome/browser/desktop/)
- - [Better Touch Tool](https://www.boastr.net/downloads/) (Don't forgot to drop in the license file)
+ - [Better Touch Tool](https://folivora.ai/downloads) (Don't forgot to drop in the license file)
  - [Cyberduck](https://cyberduck.io/?l=en) (Don't forgot to drop in the license file)
  - [Tunnelblick](https://tunnelblick.net/downloads.html) (Don't forgot to drop in the configuration files)
  - [Carbon Copy Cloner](https://bombich.com/download) (Don't forgot to drop in the license key)
@@ -32,9 +32,18 @@ A collection of machine configuration I use
 
 ## Do Configuration
 
-#### SSH Config
-```sh
-ln -s $PWD/ssh/config ~/.ssh/config
+#### Git Config
+
+```
+git config --global user.name "Nick Whyte"
+git config --global user.email nick@nickwhyte.com
+git config --global commit.gpgsign true
+git config --global core.editor subl -n -w
+git config --global core.editor "subl -n -w"
+git config --global core.excludesfile "/Users/nickw/.gitignore_global"
+git config --global push.default current
+git config --global pull.ff only
+git config --global oh-my-zsh.hide-dirty 1
 ```
 
 #### Subl binary
@@ -44,7 +53,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 #### Sublime synced settings (.dotfiles)
 ```sh
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+cd ~/Library/Application\ Support/Sublime\ Text/Packages/
 rm -rf User
 ln -s ~/.dotfiles/subl/User
 ```
@@ -54,14 +63,6 @@ ln -s ~/.dotfiles/subl/User
 ./install_dotfiles.sh
 ```
 
-#### Tmux
-
-On OSX we need to install reattach-to-user-namespace to allow tmux to function.
-
-```
-brew install reattach-to-user-namespace
-```
-
 #### GPG Config
 ```sh
 mkdir ~/.gpg
@@ -69,15 +70,12 @@ ln -s $PWD/gpg/gpg-agent.conf ~/.gpg
 ln -s $PWD/gpg/gpg.conf ~/.gpg
 ```
 
-#### Nginx Reverse Proxy Port Redirection
-```sh
-brew install nginx
-# Link appropriately with /usr/local/etc/nginx/
-```
-
 #### ZSH Autosuggestions
+
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+
 ```sh
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 #### FZF Fuzzy Ctr-r
