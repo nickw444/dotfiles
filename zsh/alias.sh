@@ -9,7 +9,6 @@ alias halp="git for-each-ref --color=always --sort=-committerdate refs/heads --f
 alias gsl="git stash list"
 alias glsig="git log --graph --oneline --decorate --pretty=\"format:%h %G? %aN  %s\""
 
-
 alias nom='export PATH=$PWD/node_modules/.bin:$PATH' # Add Node Modules to Path
 alias binds='sudo lsof -i -n -P | grep TCP'
 alias signon='git config --global commit.gpgsign true'
@@ -21,8 +20,3 @@ git_log_grep () {
     sed -e "s/** //g" |
     xargs git log --oneline --decorate --graph $2
 }
-
-alias del='rmtrash'
-alias trash='rmtrash'
-alias gh='github-info'
-

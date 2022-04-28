@@ -32,9 +32,16 @@ A collection of machine configuration I use
 
 ## Do Configuration
 
-#### SSH Config
-```sh
-ln -s $PWD/ssh/config ~/.ssh/config
+#### Git Config
+
+```
+git config --global user.name "Nick Whyte"
+git config --global user.email nick@nickwhyte.com
+git config --global commit.gpgsign true
+git config --global core.editor subl -n -w
+git config --global core.editor "subl -n -w"
+git config --global core.excludesfile "/Users/nickw/.gitignore_global"
+git config --global push.default current
 ```
 
 #### Subl binary
@@ -52,14 +59,6 @@ ln -s ~/.dotfiles/subl/User
 #### Link Dotfiles
 ```sh
 ./install_dotfiles.sh
-```
-
-#### Tmux
-
-On OSX we need to install reattach-to-user-namespace to allow tmux to function.
-
-```
-brew install reattach-to-user-namespace
 ```
 
 #### GPG Config

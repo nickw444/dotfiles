@@ -39,7 +39,7 @@ prompt_dir() {
 
 prompt_context() {
 	# Only show the first char of the username
-	prompt_segment black default "%(!.%{%F{yellow}%}.)$USER[1]@%m"
+  prompt_segment black white "%(!.%{%F{yellow}%}.)$USER[1]@%m"
 }
 
 build_prompt() {
@@ -53,7 +53,7 @@ build_prompt() {
 
 git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "(%{$fg_bold[magenta]%}${ref#refs/heads/}%{${reset_color}%})"
+  echo "(%{$fg_bold[black]%}${ref#refs/heads/}%{${reset_color}%})"
 }
 
 RPROMPT='$(git_prompt_info)'
@@ -61,7 +61,13 @@ RPROMPT='$(git_prompt_info)'
 # FZF Plugin
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+signon # re-enable Git commit signing on every session
+
 # Source for local machine overrides
 if [ -e "$HOME/.zshrc-local" ]; then
   source "$HOME/.zshrc-local";
 fi
+
+if [ -e /Users/nickw/.nix-profile/etc/profile.d/nix.sh ]; then
+  source $HOME/.nix-profile/etc/profile.d/nix.sh;
+fi # added by Nix installer
