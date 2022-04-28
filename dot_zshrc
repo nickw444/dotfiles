@@ -25,6 +25,9 @@ source $ZSH/oh-my-zsh.sh
 # Fix for when pasting large buffers for autosuggestions
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
+# History fixes
+export SAVEHIST=50000
+
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # Preferred editor for local and remote sessions
@@ -66,6 +69,10 @@ signon # re-enable Git commit signing on every session
 # Source for local machine overrides
 if [ -e "$HOME/.zshrc-local" ]; then
   source "$HOME/.zshrc-local";
+fi
+
+if [ -e "$HOME/.zshrc-secret" ]; then
+  source "$HOME/.zshrc-secret";
 fi
 
 if [ -e /Users/nickw/.nix-profile/etc/profile.d/nix.sh ]; then

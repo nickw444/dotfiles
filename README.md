@@ -42,6 +42,8 @@ git config --global core.editor subl -n -w
 git config --global core.editor "subl -n -w"
 git config --global core.excludesfile "/Users/nickw/.gitignore_global"
 git config --global push.default current
+git config --global pull.ff only
+git config --global oh-my-zsh.hide-dirty 1
 ```
 
 #### Subl binary
