@@ -10,7 +10,7 @@ A collection of machine configuration I use
  - [VS Code](https://code.visualstudio.com/)
  - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
  - [Google Chrome](https://www.google.com.au/chrome/browser/desktop/)
- - [Better Touch Tool](https://www.boastr.net/downloads/) (Don't forgot to drop in the license file)
+ - [Better Touch Tool](https://folivora.ai/downloads) (Don't forgot to drop in the license file)
  - [Cyberduck](https://cyberduck.io/?l=en) (Don't forgot to drop in the license file)
  - [Tunnelblick](https://tunnelblick.net/downloads.html) (Don't forgot to drop in the configuration files)
  - [Carbon Copy Cloner](https://bombich.com/download) (Don't forgot to drop in the license key)
