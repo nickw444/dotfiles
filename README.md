@@ -16,15 +16,14 @@ A collection of machine configuration I use
  - [Carbon Copy Cloner](https://bombich.com/download) (Don't forgot to drop in the license key)
  - [DriveDx](http://binaryfruit.com/download/drivedx/mac/1?ref=LicenseEmail) (Don't forgot to drop in the license key)
  - [Little Snitch](https://www.obdev.at/products/littlesnitch/download.html) (Don't forgot to drop in the license key)
- - [Hyperswitch](https://bahoom.com/hyperswitch)
+ - [alt-tab](https://alt-tab-macos.netlify.app/)
  - ~[F.lux](https://justgetflux.com/)~ Enable NightShift
  - [Spotify](https://www.spotify.com/au/download/mac/)
- - [Rescuetime](https://www.rescuetime.com/download)
+ - ~[Rescuetime](https://www.rescuetime.com/download)~ Enable screen time & cloud sharing
  - [Kaleidoscope](https://itunes.apple.com/au/app/kaleidoscope/id587512244?mt=12)
  - [ksdiff](http://www.kaleidoscopeapp.com/ksdiff2)
  - [GPG Suite](https://gpgtools.org/)
  - [Fira Code Font](https://github.com/tonsky/FiraCode)
- - [The Unarchiver](https://itunes.apple.com/us/app/the-unarchiver/id425424353?mt=12)
  - [Things](https://itunes.apple.com/au/app/things-3/id904280696?mt=12)
  - [Rectangle](https://rectangleapp.com/)
  - [Amphetamine](https://itunes.apple.com/au/app/amphetamine/id937984704?mt=12)
